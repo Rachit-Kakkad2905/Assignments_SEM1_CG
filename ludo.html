@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ludo</title>
+   
+</head>
+<style>
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.home{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 50px solid;
+}
+.red{
+    border: 30px solid;
+    color: red;
+}
+.r{
+    background-color: red;
+}
+.g{
+    background-color: green;
+}
+.y{
+    background-color: yellow;
+}
+.b{
+    background-color: blue;
+}
+.circle{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid;
+}
+.way1{
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+}
+.green{
+    border: 30px solid;
+    color: green;
+}
+.way2{
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.center{
+    height: 150px;
+    width: 150px;
+    border: 3px black solid ;
+    box-sizing: border-box;
+    position: relative;
+}
+.blue{
+    border: 30px solid;
+    color: blue;
+}
+.yellow{
+    border: 30px solid;
+    color: yellow;
+}
+.safe{
+    font-size: 40px;
+}
+ body {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+ .triangle {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+     .green2 {
+      background: green;
+      clip-path: polygon(0 0, 100% 0, 50% 50%);
+    } 
+    .blue2 {
+        background: blue;
+      clip-path: polygon(100% 100%, 0 100%, 50% 50%);
+      
+    }
+    .red2 {
+      background: red;
+      clip-path: polygon(0 100%, 0 0, 50% 50%);
+      
+    }
+   .yellow2 {
+      background: yellow;
+      clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="red home">
+            <div class="circle "></div>
+            <div class="circle "></div>
+            <div class="circle "></div>
+            <div class="circle "></div>
+        </div>
+        <div class="way1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box g "></div>
+            <div class="box g safe">&starf;</div>
+            <div class="box g safe">&starf;</div>
+            <div class="box g"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box g"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box g "></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box g"></div>
+            <div class="box"></div>
+        </div>
+        <div class="green home">
+            <div class="circle "></div>
+            <div class="circle "></div>
+            <div class="circle "></div>
+            <div class="circle "></div>
+        </div>
+        <div class="way2">
+            <div class="box "></div>
+            <div class="box r safe">&starf;</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box "></div>
+            <div class="box"></div>
+            <div class="box "></div>
+            <div class="box r"></div>
+            <div class="box r"></div>
+            <div class="box r"></div>
+            <div class="box r"></div>
+            <div class="box r"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box r safe">&starf;</div>
+            <div class="box "></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="center">
+            
+            <div class="triangle green2"></div>
+            <div class="triangle blue2"></div>
+            <div class="triangle red2"></div>
+            <div class="triangle yellow2"></div>
+        </div>
+        <div class="way2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box y safe">&starf;</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box y"></div>
+            <div class="box y"></div>
+            <div class="box y"></div>
+            <div class="box y"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box y safe">&starf;</div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="blue home"> 
+            <div class="circle "></div> 
+            <div class="circle "></div> 
+            <div class="circle "></div> 
+            <div class="circle "></div> 
+        </div>
+         <div class="way1">
+            <div class="box"></div>
+            <div class="box b"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box b"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box b"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box b"></div>
+            <div class="box b safe">&starf;</div>
+            <div class="box b safe">&starf;</div>
+            <div class="box b"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box "></div>
+            <div class="box"></div>
+        </div>
+         <div class="yellow home">
+            <div class="circle "></div>
+            <div class="circle "></div>
+            <div class="circle "></div>
+            <div class="circle "></div>
+        </div>
+    </div>
+</body>
+</html>

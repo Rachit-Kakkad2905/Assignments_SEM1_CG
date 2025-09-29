@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, #0b3d91, #001f3f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.title span {
+  color: #f8d210;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.team-box {
+  background: #222;
+  padding: 20px 30px;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.team-box.ind {
+  background-color: #005bbb;
+}
+
+.team-box.pak {
+  background-color: #1d9e42;
+}
+
+.team-box h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.ball {
+  background: white;
+  color: black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bat-btn {
+  background-color: #ffc107;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+}

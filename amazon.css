@@ -1,0 +1,168 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #EAEDED;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+
+.navbar {
+  background-color: #131921;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.nav-left { 
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-search {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.nav-search select,
+.nav-search input {
+  border: none;
+  padding: 8px;
+}
+
+.nav-search select {
+  background: #f3f3f3;
+}
+
+.nav-search input {
+  flex: 1;
+}
+
+.nav-search button {
+  background: #febd69;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart img {
+  width: 28px;
+}
+
+/* SECOND NAVBAR */
+.nav-links {
+  display: flex;
+  align-items: center;
+  background-color: #232F3E;
+  color: white;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero-buttons {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.hero-buttons .arrow {
+  width: 40px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card a {
+  display: block;
+  margin-top: 10px;
+  color: #007185;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.card.sign-in {
+  text-align: center;
+}
+
+.card.sign-in button {
+  background-color: #FFD814;
+  border: 1px solid #FCD200;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}

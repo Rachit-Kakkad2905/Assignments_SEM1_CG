@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.scorecard {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.innings-header {
+  background: #e74c3c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+thead {
+  display: none; 
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+}
+
+.batsman a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.batsman a:hover {
+  text-decoration: underline;
+}
+
+.desc {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.extras, .total, .dnb {
+  background: #f7f7f7;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.total {
+  background: #f2f2f2;
+  font-size: 1rem;
+}
+
+.dnb a {
+  color: #007BFF;
+  text-decoration: none;
+}

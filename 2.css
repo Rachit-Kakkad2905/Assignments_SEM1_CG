@@ -1,0 +1,153 @@
+/* =========================
+   Assignment 2 — Colors & Backgrounds
+   ========================= */
+
+/* 1. Base / Body */
+:root {
+  --primary: #1e88e5;
+  --accent: #ff5252;
+  --gradient1: #ff8a65;
+  --gradient2: #ff5252;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional container for readability */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 2. Card Base */
+.card {
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 140px;
+  margin: 1rem 0;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* 3. Solid Color Card */
+.card.solid {
+  background-color: var(--primary);
+}
+
+.card.solid .cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* 4. Linear Gradient Card */
+.card.linear {
+  background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
+}
+
+/* 5. Radial Gradient Card */
+.card.radial {
+  background: radial-gradient(circle at top left, #81d4fa, #0288d1);
+}
+
+/* 6. Background Image Demo */
+.bg-demo {
+  background-image: url("https://codinggita.com/assets/ru_3-Nz3OO0R3.jpeg");
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: contain;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+}
+
+/* Semi-transparent overlay for readability */
+.bg-demo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  z-index: 0;
+}
+.bg-demo > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 7. Cover vs Contain Comparison */
+.bg-compare {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.compare {
+  flex: 1;
+  min-height: 150px;
+  background-image: url("http://codinggita.com/wp-content/uploads/placeholder-800x400.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.compare.cover {
+  background-size: cover;
+}
+
+.compare.contain {
+  background-size: contain;
+  background-color: #333;
+}
+
+/* 8. Parallax / Fixed Background */
+.parallax {
+  background-image: url("http://codinggita.com/wp-content/uploads/placeholder-800x400.png");
+  background-attachment: fixed; /* May not work on some mobile browsers */
+  background-size: cover;
+  background-position: center;
+  min-height: 220px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.parallax > * {
+  position: relative;
+  z-index: 1;
+}
+

@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.sudoku-table, .answer-table {
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sudoku-table td, .answer-table td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.sudoku-table {
+    width: 160px;
+    height: 160px;
+}
+
+.answer-table {
+    width: 360px;
+    height: 360px;
+}
+
+.highlight {
+    background-color: #c8e6c9;
+}
+
+.sudoku-table td {
+    border-bottom: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+}
+
+.sudoku-table tr:nth-child(2) td,
+.sudoku-table tr:nth-child(4) td {
+    border-bottom: 3px solid black;
+}
+
+.sudoku-table td:nth-child(2),
+.sudoku-table td:nth-child(4) {
+    border-right: 3px solid black;
+}
+
+.answer-table td {
+    border-bottom: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+}
+
+.answer-table tr:nth-child(3n) td {
+    border-bottom: 3px solid black;
+}
+
+.answer-table td:nth-child(3n) {
+    border-right: 3px solid black;
+}

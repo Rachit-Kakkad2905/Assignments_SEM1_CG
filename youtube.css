@@ -1,0 +1,227 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #0f0f0f;   /* dark theme background */
+  color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 12px 0;
+  border-right: 1px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #212121;
+}
+
+.sidebar .logo {
+  padding: 12px 24px;
+}
+
+.sidebar .yt-logo {
+  width: 120px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.sidebar a img {
+  width: 20px;
+}
+
+.sidebar a:hover {
+  background: #383838;
+  border-radius: 8px;
+}
+
+.sidebar h4 {
+  padding: 8px 24px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.subscription:hover {
+  background: #383838;
+  border-radius: 8px;
+}
+
+.subscription img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* Main Area */
+.main {
+  margin-left: 240px;
+  flex: 1;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  background: #212121;
+  z-index: 10;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header .yt-logo-small {
+  width: 90px;
+}
+
+header .search-bar {
+  flex: 1;
+  display: flex;
+  max-width: 600px;
+  margin: 0 40px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #333;
+  background: #121212;
+  color: #fff;
+  border-radius: 2px 0 0 2px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: #333;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 18px;
+}
+
+.search-bar .mic {
+  border-radius: 50%;
+  margin-left: 10px;
+  background: #181818;
+  padding: 8px;
+}
+
+header .right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .right-icons .icon {
+  width: 22px;
+  cursor: pointer;
+}
+
+header .profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  gap: 12px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #333;
+  background: #0f0f0f;
+  position: sticky;
+  top: 56px;
+  z-index: 5;
+}
+
+.tags button {
+  background: #383838;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tags button:hover {
+  background: #555;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  background: transparent;
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video-info {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.video-info .channel-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.video-info h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.video-info p {
+  font-size: 13px;
+  color: #aaa;
+}

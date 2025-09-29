@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #000;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo img {
+  width: 100%;
+  margin: 0 0 15px 5px;
+}
+
+.menu, .menu-section {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.menu li, .menu-section li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b3b3b3;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu li.active, .menu li:hover, .menu-section li:hover {
+  background-color: #282828;
+  color: #fff;
+}
+
+.menu li img, .menu-section li img {
+  width: 18px;
+  height: 18px;
+}
+
+.playlist-section p {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  margin: 3px 0;
+  cursor: pointer;
+}
+
+.playlist-section p:hover {
+  color: #fff;
+}
+
+.install-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.install-btn img {
+  width: 18px;
+}
+
+.install-btn:hover {
+  color: #fff;
+}
+
+.main-content {
+  margin-left: 230px;
+  padding: 20px;
+  flex: 1;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 1.6rem;
+}
+
+.quick-playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.playlist-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2a2a2a;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.playlist-card img {
+  width: 45px;
+  border-radius: 4px;
+}
+
+.playlist-card:hover {
+  background-color: #3e3e3e;
+}
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header a {
+  color: #1db954;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.show-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.show-card {
+  background-color: #181818;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.show-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.show-card p {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.show-card span {
+  font-size: 0.75rem;
+  color: #b3b3b3;
+}
+
+.show-card:hover {
+  background-color: #282828;
+}
+
+/* PLAYER */
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  height: 90px; /* Taller player bar */
+  border-top: 1px solid #282828;
+}
+
+/* Song Info Section */
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.song-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.artist-name {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}
+
+
+.player-controls img {
+  width: 70%; 
+}
+  
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 300px;
+}
+
+.progress span {
+  font-size: 0.85rem;
+}
+
+.progress input[type="range"] {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #535353;
+}

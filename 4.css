@@ -1,0 +1,131 @@
+
+body {
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 1rem; /* Base font size — scalable */
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+}
+
+/* All <p> tags: consistent rhythm */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* ============================================
+   2. Utility Classes
+   ============================================ */
+.muted {
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.subtitle,
+.small-note {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 300;
+}
+
+
+.google-heading {
+  font-family: "Lato", Arial, sans-serif; /* fallback ensures text is always legible */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* ============================================
+   4. Pseudo-elements
+   ============================================ */
+.fancy::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 4px;
+  line-height: 1;
+}
+
+.fancy::first-line {
+  font-weight: 600;
+}
+
+/* ============================================
+   5. Transformations & Spacing
+   ============================================ */
+.subtitle-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.wrap-example {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* ============================================
+   6. Text Shadow (Use Sparingly)
+   ============================================ */
+/* Keep shadow subtle for readability and contrast */
+.shadow-heading {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  font-size: 1.3rem;
+}
+
+/* ============================================
+   7. Alignment Examples
+   ============================================ */
+/* Left alignment is default — use for most body text. */
+.align-left {
+  text-align: left;
+}
+
+/* Center alignment is best for short lines (titles, quotes). */
+.align-center {
+  text-align: center;
+}
+
+/* Justified text is good for longer paragraphs but avoid rivers of space. */
+.align-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ============================================
+   8. Typographic Scale (Bonus)
+   ============================================ */
+:root {
+  --type-base: 1rem;
+  --type-lg: 1.25rem;
+  --type-xl: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: var(--type-xl);
+}
+
+h2 {
+  font-size: var(--type-lg);
+}
+
+.lead {
+  font-size: var(--type-lg);
+}
+

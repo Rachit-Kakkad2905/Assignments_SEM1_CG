@@ -1,0 +1,84 @@
+/* 1. Element Selector - Style all <p> tags */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* 2. ID Selector - Style site title header */
+#site-title {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 3. Class Selectors */
+.muted {
+  color: gray;
+}
+
+.highlight {
+  background-color: #ffeb3b;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.highlight-text {
+  background-color: lightblue;
+  padding: 5px;
+}
+
+#override {
+  background-color: yellow; /* ID overrides class */
+  font-weight: bold;
+}
+
+/* 4. Descendant Selector - Style nav ul li */
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
+
+/* 5. Descendant + Child Selector */
+section > h4 {
+  color: darkblue;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+section p {
+  color: #444;
+}
+
+/* 6. Adjacent Sibling Selector */
+h4 + p {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-left: 3px solid #0077cc;
+}
+
+/* 7. Attribute Selector - Only images with alt attribute */
+img[alt] {
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+}
+
+/* 8. nth-child Selector - Style odd/even list items differently */
+.striped-list li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.striped-list li:nth-child(even) {
+  background-color: #e0f7fa;
+}

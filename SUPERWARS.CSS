@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.team {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 120px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.match-score {
+  font-size: 28px;
+  font-weight: bold;
+}
